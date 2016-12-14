@@ -9,7 +9,6 @@ class Application
 
     if request.path.match(/items/)
       groceryitem = request.path.split("/items/").last
-
       gi = Item.find(groceryitem)
 
       if gi
